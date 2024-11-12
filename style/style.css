@@ -43,9 +43,9 @@ main{
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 #imagem{
@@ -68,6 +68,7 @@ main{
 
 #formulario p{
     font-size: 0.8em;
+    margin-bottom: 10px;
 }
 
 .campo{
@@ -82,6 +83,48 @@ main{
 .campo label{
     display: none;
 }
+
+.campo span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+.campo input{
+    background-color: #224764;
+    font-size: 1em;
+    width: calc(100% - 44.5px);
+    height: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 4px;
+    transform: translateY(-9.5px);
+}
+
+.campo input:focus-within{
+    background-color: white;
+}
+
+/* MUDAR A COR DO PLACEHOLDER EM TODOS OS NAVEGADORES */
+
+::-webkit-input-placeholder{
+    color: white;
+}
+
+:-moz-placeholder{
+    color: white;
+}
+
+::-moz-placeholder{
+    color: white;
+}
+
+:-ms-input-placeholder{
+    color: white;
+}
+
+/* MUDAR A COR DO PLACEHOLDER EM TODOS OS NAVEGADORES */
 
 form input[type=submit]{
     display: block;
