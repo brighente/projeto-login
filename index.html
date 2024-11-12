@@ -6,18 +6,31 @@
     <title>Tela de Login</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media-query.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
         <article id="login">
             <section id="imagem">
-                
+                <!-- Aqui vai a imagem no CSS -->
             </section>
             <section id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça o login para poder acessar a sua conta!</p>
-                <form action="login.php" method="post">
-
+                <form action="login.php" method="post" autocapitalize="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <input type="email" name="login" id="ilogin" placeholder="E-mail:" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">lock_open</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha:" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">Esqueci a Senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </section>
         </article>

@@ -23,6 +23,14 @@
         width: 65%;
         height: 100%;
     }
+
+    #formulario h1{
+        font-size: 1.5em;
+    }
+
+    #formulario p{
+        font-size: 1em;
+    }
 }
 
 
@@ -46,5 +54,13 @@
     #formulario{
         float: left;
         width: 50%;
+    }
+
+    #formulario h1{
+        font-size: 2em;
+    }
+
+    #formulario p{
+        font-size: 1.2em;
     }
 }
